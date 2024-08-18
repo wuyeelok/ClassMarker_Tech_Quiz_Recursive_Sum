@@ -12,7 +12,6 @@ public class App
     }
 
     public static int getRecursiveSumOfDigit(String n , int k){
-        int iSum = 0;
 
         long sum = getRecursiveSumOfDigitL(n, k);
 
@@ -20,8 +19,7 @@ public class App
             sum = getRecursiveSumOfDigitL(String.valueOf(sum), 1);
         }
 
-        iSum = (int) sum;
-        return iSum;
+        return (int) sum;
     }
 
     private static long getRecursiveSumOfDigitL(String n, int k) {
